@@ -113,6 +113,43 @@
   margin-left: 0.5rem;
 }
 
+.snsIcons{
+  text-align: center;
+
+}
+
+.snsIcons svg{
+  margin:  0.5rem;
+}
+
+.tabBtn button{
+  outline: none;
+  color:whitesmoke
+}
+
+.tabPanels{
+  /* background-color: #37474f; */
+  padding-top: 1rem
+}
+.skills{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills h5{
+  padding: 1rem 3rem;
+  margin: 2px 4px;
+}
+
+.showMoreText{
+  color:whitesmoke
+}
+.showMoreText a{
+  color: #149918
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
