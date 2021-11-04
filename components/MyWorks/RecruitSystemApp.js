@@ -2,15 +2,13 @@ import {
   Button,
   Card,
   CardActions,
-  Container,
   Grid,
   Typography,
   CardContent,
   CardMedia,
   Link,
 } from '@mui/material';
-import ReactShowMoreText from 'react-show-more-text';
-import styles from '../../styles/Home.module.css';
+
 import { SkillTag } from '../Tags/SkillTag';
 
 export function RecruiteSystemApp() {
@@ -28,11 +26,12 @@ export function RecruiteSystemApp() {
           <CardMedia component='img' image='/testapp.svg' alt='random' />
           <CardContent sx={{ flexGrow: 1 }}>
             <Typography gutterBottom variant='h5' component='h2' color='black'>
-              Recruite Exam App
+              Recruit Exam App
             </Typography>
             <Typography color='black'>
-              This is a media card. You can use this section to describe the
-              content.
+              I expect this app being used to have candidates take a simple test
+              during the hiring process, where they can create questions, take
+              the test, and also view the results.
             </Typography>
             <div
               style={{
@@ -47,10 +46,34 @@ export function RecruiteSystemApp() {
             </div>
           </CardContent>
           <CardActions>
-            <Button size='small' color='secondary'>
-              Github
-            </Button>
-
+            <div
+              style={{
+                display: 'flex',
+                flexFlow: 'column',
+                marginRight: '2em',
+              }}
+            >
+              <Link
+                href='https://github.com/Sho-ki/recruit-system-frontend'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <Button size='small' color='secondary'>
+                  Github Frontend
+                </Button>{' '}
+              </Link>{' '}
+              <Link
+                href='https://github.com/Sho-ki/recruit-system-backend'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {' '}
+                <Button size='small' color='secondary'>
+                  Github Backend
+                </Button>{' '}
+              </Link>
+            </div>
             <Link
               href='https://recruit-system-frontend.vercel.app/admin/home'
               target='_blank'
@@ -65,37 +88,38 @@ export function RecruiteSystemApp() {
         </Card>
       </Grid>
       <Grid item xs={12} sm={6} md={7}>
-        <Typography gutterBottom variant='h5' component='h2'>
-          Tools :
+        <Typography gutterBottom variant='h5'>
+          Purpose :
         </Typography>
         <Typography>
-          Frontend : React (Next.js) <br />
-          Backend : Node.js <br />
-          Database : Supabase
-        </Typography>{' '}
-        <Typography gutterBottom variant='h5' component='h2' mt={1}>
+          To get a deeper understanding of tools such as React Hook Form, React
+          Custom Hooks, React Context, etc., I researched how to use them and
+          developed this app. I wrote this article{' '}
+          <Link
+            color='secondary'
+            href='https://dev.to/shoki/using-react-context-to-prevent-prop-drilling-4acd'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Using React Context to Prevent Prop Drilling
+          </Link>
+          . And to actually learn database normalization, I learned through
+          creating a more complex application.
+        </Typography>
+        <Typography gutterBottom variant='h5' mt={1}>
           Features :
         </Typography>
-        <ReactShowMoreText
-          lines={13}
-          more='Show more'
-          less='Show less'
-          truncatedEndingComponent={'... '}
-          className={styles.showMoreText}
-        >
-          <Typography>
-            1. Drag & Drop with Database Operations
-            <br />
-            The database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
+
+        <div>
+          <Typography mb='4px' mt='10px' variant='h6'>
+            Relational Database
           </Typography>
-        </ReactShowMoreText>
+          <Typography>
+            Created it with a focus on database operations. For example, when
+            you create a question, you can put choices in it as much as you can.
+            Also, you can also show which questions each candidate got wrong.
+          </Typography>
+        </div>
       </Grid>
     </>
   );

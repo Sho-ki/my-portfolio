@@ -1,20 +1,12 @@
 import * as React from 'react';
-
 import SwipeableViews from 'react-swipeable-views';
-import { useTheme } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import { Container } from '@mui/material';
-import { Grid } from '@mui/material';
-import Box from '@mui/material/Box';
+import { useTheme, AppBar, Tabs, Tab, Box } from '@mui/material';
+
 import { TabPanel } from './TabPanel';
 import { Academic } from './Academic';
 import { Experiences } from './Experiences';
-import { Skills } from './Skills';
+import { Introduction } from './Introduction';
 import styles from '../../styles/Home.module.css';
-import { blueGrey } from '@mui/material/colors';
 import { MyTimeLine } from '../MyTimeLine/MyTimeLine';
 
 function a11yProps(index) {
@@ -43,12 +35,13 @@ export default function AboutMe() {
         sx={{
           bgcolor: 'primary.main',
           width: '100%',
-          maxHeight: '40vh',
+          height: '50vh',
         }}
         overflow='auto'
         flex={1}
         flexDirection='column'
         display='flex'
+        paddingTop=' 5em'
       >
         <AppBar position='static' color={'transparent'}>
           <Tabs
@@ -60,7 +53,7 @@ export default function AboutMe() {
             className={styles.tabBtn}
           >
             {' '}
-            <Tab label='Skills' {...a11yProps(0)} />
+            <Tab label='About Me' {...a11yProps(0)} />
             <Tab label='Experiences' {...a11yProps(1)} />
             <Tab label='Academic' {...a11yProps(2)} />
           </Tabs>
@@ -76,7 +69,7 @@ export default function AboutMe() {
             dir={theme.direction}
             className={styles.tabPanels}
           >
-            <Skills />
+            <Introduction />
           </TabPanel>
           <TabPanel
             value={value}

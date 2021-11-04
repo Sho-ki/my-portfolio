@@ -2,22 +2,20 @@ import {
   Button,
   Card,
   CardActions,
-  Container,
   Grid,
   Typography,
   CardContent,
   CardMedia,
   Link,
 } from '@mui/material';
-import ReactShowMoreText from 'react-show-more-text';
-import styles from '../../styles/Home.module.css';
+
 import { SkillTag } from '../Tags/SkillTag';
 
 export function TodoApp() {
   return (
     <>
       {' '}
-      <Grid item xs={12} sm={6} md={5}>
+      <Grid item xs={12} sm={6} md={5} display='flex'>
         <Card
           md={{
             height: '100%',
@@ -31,8 +29,7 @@ export function TodoApp() {
               Todo App
             </Typography>
             <Typography color='black'>
-              This is a media card. You can use this section to describe the
-              content.
+              Todo list app with a function of drag and drop with database
             </Typography>
             <div
               style={{
@@ -47,9 +44,15 @@ export function TodoApp() {
             </div>
           </CardContent>
           <CardActions>
-            <Button size='small' color='secondary'>
-              Github
-            </Button>
+            <Link
+              href='https://github.com/Sho-ki/todoapp-serverless'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Button size='small' color='secondary'>
+                Github
+              </Button>
+            </Link>
 
             <Link
               href='https://serverless-todo-app-nine.vercel.app/'
@@ -65,49 +68,42 @@ export function TodoApp() {
         </Card>
       </Grid>
       <Grid item xs={12} sm={6} md={7}>
-        <Typography gutterBottom variant='h5' component='h2'>
-          Tools :
+        <Typography gutterBottom variant='h5'>
+          Purpose :
         </Typography>
         <Typography>
-          Frontend : React (Next.js) <br />
-          Backend : Node.js <br />
-          Database : Supabase
-        </Typography>{' '}
-        <Typography gutterBottom variant='h5' component='h2' mt={1}>
+          To satisfy my curiosity about the database operation after a drag and
+          drop, I created this todo-app. Besides, I wrote an article{' '}
+          <Link
+            color='secondary'
+            href='https://dev.to/shoki/how-to-update-the-database-after-a-drag-and-drop-operation-27dc'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            How to Update the Database After a Drag-and-Drop Operation
+          </Link>
+        </Typography>
+        <Typography gutterBottom variant='h5' mt={1}>
           Features :
         </Typography>
-        <ReactShowMoreText
-          lines={13}
-          more='Show more'
-          less='Show less'
-          truncatedEndingComponent={'... '}
-          className={styles.showMoreText}
-        >
-          <Typography>
+
+        <div>
+          <Typography mb='4px' variant='h6'>
             1. Drag & Drop with Database Operations
-            <br />
-            The database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.The
-            database is also designed to be manipulated during drag-and-drop
-            operations, so the order can be preserved even after reloading.
           </Typography>
-        </ReactShowMoreText>
+          <Typography>
+            After dragging and dropping, the updated order will be automatically
+            saved in the database.
+          </Typography>
+        </div>
+        <div>
+          <Typography mb='4px' mt='10px' variant='h6'>
+            2. Index Number Visualize Mode
+          </Typography>
+          <Typography>
+            This mode helps others understand what is going on in the database
+          </Typography>
+        </div>
       </Grid>
     </>
   );

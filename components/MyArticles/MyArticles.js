@@ -1,8 +1,4 @@
-import { Button, Card, CardActions, Container, Link } from '@mui/material';
-import { Grid } from '@mui/material';
-import { CardMedia } from '@mui/material';
-import { Typography } from '@mui/material';
-import { CardContent } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -51,6 +47,7 @@ function MyArticles({ articleSet }) {
         bgcolor: 'primary.main',
         width: '100%',
       }}
+      id='myArticles'
     >
       <Container sx={{ py: 3 }} maxWidth='lg'>
         <Typography component='h1' variant='h2' gutterBottom textAlign='center'>
@@ -58,8 +55,8 @@ function MyArticles({ articleSet }) {
         </Typography>
 
         <Slider {...settings} style={{ margin: '0 20px' }}>
-          {articleSet.data.map((article) => (
-            <MyArticle article={article} key={article.id} />
+          {articleSet.data.map((article, i) => (
+            <MyArticle article={article} key={article.id} num={i} />
           ))}
         </Slider>
       </Container>

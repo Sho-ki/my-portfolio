@@ -1,18 +1,7 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  Container,
-  Grid,
-  Typography,
-  CardContent,
-} from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import { RecruiteSystemApp } from './RecruitSystemApp';
 import { TodoApp } from './TodoApp';
-import styles from '../../styles/Home.module.css';
 import { Box } from '@mui/system';
-
-const cards = [1, 2, 3];
 
 function MyWork() {
   return (
@@ -21,6 +10,7 @@ function MyWork() {
         bgcolor: 'primary.main',
         width: '100%',
       }}
+      id='myWorks'
     >
       <Container sx={{ py: 10 }} maxWidth='md'>
         <Typography component='h1' variant='h2' align='center' gutterBottom>

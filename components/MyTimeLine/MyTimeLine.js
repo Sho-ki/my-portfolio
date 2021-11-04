@@ -1,13 +1,5 @@
 import Box from '@mui/material/Box';
-import {
-  Button,
-  Container,
-  Divider,
-  Grid,
-  Link,
-  Typography,
-} from '@mui/material';
-import { Tooltip } from '@mui/material';
+import { Container, Grid, Typography, Tooltip } from '@mui/material';
 
 export function MyTimeLine({ handleChange }) {
   const SelfDev = {
@@ -15,7 +7,7 @@ export function MyTimeLine({ handleChange }) {
     description: '3/2020~, Start to Learn Coding',
   };
   const BsEdu = {
-    title: 'B.S. in Education',
+    title: 'B.A. in English Literature',
     description: '4/2016 ~ 3/2021, Doshisha University, Japan',
   };
   const BsCs = {
@@ -39,7 +31,10 @@ export function MyTimeLine({ handleChange }) {
         bgcolor: 'primary.main',
         width: '100%',
         height: '30vh',
+        marginTop: '-100px',
+        paddingTop: '60px',
       }}
+      id='about'
     >
       <Container maxWidth='lg'>
         <Grid
@@ -51,7 +46,6 @@ export function MyTimeLine({ handleChange }) {
         >
           <Grid item xs={5}></Grid>
           <Tooltip
-            style={{ cursor: 'pointer' }}
             title={
               <>
                 <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
@@ -73,6 +67,7 @@ export function MyTimeLine({ handleChange }) {
                   height: 4,
                   width: '100%',
                   marginLeft: 'inherit',
+                  borderRadius: '10px',
                 }}
               />
             </Grid>
@@ -108,6 +103,7 @@ export function MyTimeLine({ handleChange }) {
                   height: 4,
                   width: '100%',
                   marginLeft: 'inherit',
+                  borderRadius: '10px',
                 }}
               />
             </Grid>
@@ -135,6 +131,7 @@ export function MyTimeLine({ handleChange }) {
                   height: 4,
                   width: '100%',
                   marginLeft: 'inherit',
+                  borderRadius: '10px',
                 }}
               />
             </Grid>
@@ -168,6 +165,7 @@ export function MyTimeLine({ handleChange }) {
                   height: 4,
                   width: '100%',
                   marginLeft: 'inherit',
+                  borderRadius: '10px',
                 }}
               />
             </Grid>
@@ -194,29 +192,49 @@ export function MyTimeLine({ handleChange }) {
                   height: 4,
                   width: '100%',
                   marginLeft: 'inherit',
+                  borderRadius: '10px',
                 }}
               />
             </Grid>
           </Tooltip>
         </Grid>
-        <hr
-          style={{
-            color: 'red',
-            backgroundColor: 'red',
-            height: 1,
-            width: '100%',
-          }}
-        />
+
         <Grid container spacing={3}>
-          <Grid item xs={3}>
-            <Typography textAlign='left'>2018</Typography>
-          </Grid>
-          <Grid item xs={5}>
-            <Typography textAlign='left'>2020</Typography>
-          </Grid>
-          <Grid item xs={3}>
-            <Typography textAlign='left'>2021</Typography>
-          </Grid>
+          <Tooltip
+            style={{ cursor: 'pointer' }}
+            title={
+              <>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
+                  {SelfDev.title}
+                </h6>
+                <span>{SelfDev.description}</span>
+              </>
+            }
+            placement='right'
+          >
+            <Grid container item xs={12}>
+              {' '}
+              <hr
+                style={{
+                  color: 'red',
+                  backgroundColor: 'red',
+                  height: 4,
+                  width: '100%',
+                  marginLeft: 'inherit',
+                  borderRadius: '10px',
+                }}
+              />{' '}
+              <Grid item xs={3}>
+                <Typography textAlign='left'>2018</Typography>
+              </Grid>
+              <Grid item xs={5}>
+                <Typography textAlign='left'>2020</Typography>
+              </Grid>
+              <Grid item xs={3}>
+                <Typography textAlign='left'>2021</Typography>
+              </Grid>
+            </Grid>
+          </Tooltip>
         </Grid>
       </Container>
     </Box>

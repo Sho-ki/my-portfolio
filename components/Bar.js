@@ -1,25 +1,35 @@
-import { AppBar, Typography, Toolbar } from "@mui/material";
-import { blueGrey } from "@mui/material/colors";
+import { AppBar, Typography, Toolbar, Button } from '@mui/material';
 
 function Bar() {
   return (
     <AppBar
-      position="fixed"
+      position='fixed'
       style={{
-        backgroundColor: "#131A1D ",
+        backgroundColor: '#131A1D ',
         borderBottom: `1px solid white}`,
       }}
     >
       <Toolbar>
-        <Typography mr={4} variant="h5" noWrap>
-          Top
-        </Typography>{" "}
-        <Typography mr={4} variant="h6" noWrap>
-          Works
-        </Typography>{" "}
-        <Typography mr={4} variant="h6" noWrap>
-          Articles
-        </Typography>
+        <Button href='#top'>
+          <Typography mr={4} variant='h5' noWrap>
+            Top
+          </Typography>{' '}
+        </Button>
+        <Button href='#about'>
+          <Typography mr={4} variant='h6' noWrap>
+            About
+          </Typography>{' '}
+        </Button>
+        <Button href='#myWorks'>
+          <Typography mr={4} variant='h6' noWrap>
+            Works
+          </Typography>{' '}
+        </Button>
+        <Button href='#myArticles'>
+          <Typography mr={4} variant='h6' noWrap>
+            Articles
+          </Typography>
+        </Button>
       </Toolbar>
     </AppBar>
   );

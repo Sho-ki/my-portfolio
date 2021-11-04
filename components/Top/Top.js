@@ -1,5 +1,5 @@
 import { Box } from '@mui/system';
-import { Container, Grid } from '@mui/material';
+import { Container, IconButton } from '@mui/material';
 import { Typography } from '@mui/material';
 import { Stack } from '@mui/material';
 import { Button } from '@mui/material';
@@ -16,18 +16,31 @@ function Top() {
         pb: 6,
         bgcolor: 'primary.main',
       }}
+      id='top'
     >
       <Container maxWidth='sm'>
         <Typography component='h1' variant='h2' align='center' gutterBottom>
           Shoki Ishii
         </Typography>
         <div className={styles.snsIcons}>
-          <LinkedInIcon sx={{ fontSize: 40 }} color='info' />
-          <GitHubIcon sx={{ fontSize: 40 }} color='tertiary' />
+          <IconButton
+            aria-label='linkedin.com/in/shoki-ishii/'
+            onClick={() =>
+              window.open('https://www.linkedin.com/in/shoki-ishii/')
+            }
+          >
+            <LinkedInIcon sx={{ fontSize: 40 }} color='info' />
+          </IconButton>
+          <IconButton
+            aria-label='github.com/Sho-ki'
+            onClick={() => window.open('https://github.com/Sho-ki')}
+          >
+            <GitHubIcon sx={{ fontSize: 40 }} color='tertiary' />
+          </IconButton>
         </div>
         <Typography variant='h5' align='center' paragraph>
-          Software developer with 1+ year of experience. Using React, Next.js,
-          and Node.js daily.
+          Software developer with 1+ year of experience. Always have a purpose
+          and passion
         </Typography>
         <Stack
           sx={{ pt: 4 }}
@@ -42,6 +55,7 @@ function Top() {
             variant='outlined'
             color='textColor'
             style={{ border: '#149918 1px solid' }}
+            href='mailto:shoki0116.highjump@gmail.com'
           >
             Contact me
           </Button>

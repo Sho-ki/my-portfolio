@@ -1,40 +1,24 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import * as React from 'react';
+import { createTheme, ThemeProvider, Box, Typography } from '@mui/material';
+import { blueGrey } from '@mui/material/colors';
+
 import Copyright from '../components/Copyright';
 import Bar from '../components/Bar';
-
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Top from '../components/Top/Top';
 import MyWork from '../components/MyWorks/MyWorks';
 import MyArticles from '../components/MyArticles/MyArticles';
 import AboutMe from '../components/AboutMe/AboutMe';
-import { blueGrey } from '@mui/material/colors';
-import axios from 'axios';
-import { GetServerSideProps } from 'next';
-import { bgcolor } from '@mui/system';
 
 const theme = createTheme({
   typography: {
     allVariants: {
       color: '#ededed',
     },
+
     fontFamily: ['Montserrat', 'sans-serif'].join(','),
   },
+
   palette: {
     primary: { main: blueGrey[900] },
     secondary: { main: '#149918' },
@@ -109,9 +93,7 @@ export default function Home(props) {
           <Typography variant='h6' align='center' gutterBottom>
             Shoki Ishii
           </Typography>
-          <Typography variant='subtitle1' align='center' component='p'>
-            Something here to give the footer a purpose!
-          </Typography>
+
           <Copyright />
         </Box>
 
