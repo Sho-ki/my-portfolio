@@ -200,41 +200,28 @@ export function MyTimeLine({ handleChange }) {
         </Grid>
 
         <Grid container spacing={3}>
-          <Tooltip
-            style={{ cursor: 'pointer' }}
-            title={
-              <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {SelfDev.title}
-                </h6>
-                <span>{SelfDev.description}</span>
-              </>
-            }
-            placement='right'
-          >
-            <Grid container item xs={12}>
-              {' '}
-              <hr
-                style={{
-                  color: 'red',
-                  backgroundColor: 'red',
-                  height: 4,
-                  width: '100%',
-                  marginLeft: 'inherit',
-                  borderRadius: '10px',
-                }}
-              />{' '}
-              <Grid item xs={3}>
-                <Typography textAlign='left'>2018</Typography>
-              </Grid>
-              <Grid item xs={5}>
-                <Typography textAlign='left'>2020</Typography>
-              </Grid>
-              <Grid item xs={3}>
-                <Typography textAlign='left'>2021</Typography>
-              </Grid>
+          <Grid container item xs={12}>
+            {' '}
+            <hr
+              style={{
+                color: 'red',
+                backgroundColor: 'red',
+                height: 4,
+                width: '100%',
+                marginLeft: 'inherit',
+                borderRadius: '10px',
+              }}
+            />{' '}
+            <Grid item xs={3}>
+              <Typography textAlign='left'>2018</Typography>
             </Grid>
-          </Tooltip>
+            <Grid item xs={5}>
+              <Typography textAlign='left'>2020</Typography>
+            </Grid>
+            <Grid item xs={3}>
+              <Typography textAlign='left'>2021</Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Container>
     </Box>
