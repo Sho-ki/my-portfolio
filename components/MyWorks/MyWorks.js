@@ -12,7 +12,7 @@ function MyWork() {
       }}
       id='myWorks'
     >
-      <Container sx={{ py: 10 }} maxWidth='md'>
+      <Container sx={{ paddingTop: 8 }} maxWidth='md'>
         <Typography component='h1' variant='h2' align='center' gutterBottom>
           My Works
         </Typography>

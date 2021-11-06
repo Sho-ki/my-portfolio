@@ -25,30 +25,19 @@ function Top() {
         <div className={styles.snsIcons}>
           <IconButton
             aria-label='linkedin.com/in/shoki-ishii/'
-            onClick={() =>
-              window.open('https://www.linkedin.com/in/shoki-ishii/')
-            }
+            onClick={() => window.open('https://www.linkedin.com/in/shoki-ishii/')}
           >
             <LinkedInIcon sx={{ fontSize: 40 }} color='info' />
           </IconButton>
-          <IconButton
-            aria-label='github.com/Sho-ki'
-            onClick={() => window.open('https://github.com/Sho-ki')}
-          >
+          <IconButton aria-label='github.com/Sho-ki' onClick={() => window.open('https://github.com/Sho-ki')}>
             <GitHubIcon sx={{ fontSize: 40 }} color='tertiary' />
           </IconButton>
         </div>
         <Typography variant='h5' align='center' paragraph>
-          Software developer with 1+ year of experience. Always have a purpose
-          and passion
+          Software developer with 1+ year of experience. Always have a purpose and passion
         </Typography>
-        <Stack
-          sx={{ pt: 4 }}
-          direction='row'
-          spacing={2}
-          justifyContent='center'
-        >
-          <Button variant='contained' sx={{ bgcolor: 'secondary.main' }}>
+        <Stack sx={{ pt: 4 }} direction='row' spacing={2} justifyContent='center'>
+          <Button variant='contained' sx={{ bgcolor: 'secondary.main', fontSize: 'smaller' }}>
             Download resume
           </Button>
           <Button

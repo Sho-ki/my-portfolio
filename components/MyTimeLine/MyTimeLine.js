@@ -12,8 +12,7 @@ export function MyTimeLine({ handleChange }) {
   };
   const BsCs = {
     title: 'B.S. in Computer Science',
-    description:
-      '5/2021 ~ Present, University of the People, USA (Part time student)',
+    description: '5/2021 ~ Present, University of the People, USA (Part time student)',
   };
   const Gym = {
     title: 'Gym Trainer & Manager',
@@ -35,22 +34,24 @@ export function MyTimeLine({ handleChange }) {
         paddingTop: '60px',
       }}
       id='about'
+      display='table'
     >
       <Container maxWidth='lg'>
         <Grid
+          alignItems='end;'
           container
           spacing={3}
           onClick={(e) => {
             handleChange(e, 0);
           }}
+          href='#about'
+          display='flex'
         >
           <Grid item xs={5}></Grid>
           <Tooltip
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {SelfDev.title}
-                </h6>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{SelfDev.title}</h6>
                 <span>{SelfDev.description}</span>
               </>
             }
@@ -75,6 +76,7 @@ export function MyTimeLine({ handleChange }) {
         </Grid>
 
         <Grid
+          alignItems='end;'
           container
           spacing={3}
           onClick={(e) => {
@@ -85,15 +87,14 @@ export function MyTimeLine({ handleChange }) {
             style={{ cursor: 'pointer' }}
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {Gym.title}
-                </h6>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{Gym.title}</h6>
                 <span>{Gym.description}</span>
               </>
             }
             placement='right'
+            href='#about'
           >
-            <Grid item xs={3}>
+            <Grid item xs={4} md={3}>
               {' '}
               <Typography textAlign='left'>{Gym.title}</Typography>
               <hr
@@ -108,21 +109,19 @@ export function MyTimeLine({ handleChange }) {
               />
             </Grid>
           </Tooltip>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={2} md={3}></Grid>
 
           <Tooltip
             style={{ cursor: 'pointer' }}
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {SdIntern.title}
-                </h6>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{SdIntern.title}</h6>
                 <span>{SdIntern.description}</span>
               </>
             }
             placement='right'
           >
-            <Grid item xs={5}>
+            <Grid item xs={5} md={3}>
               <Typography textAlign='left'>{SdIntern.title}</Typography>
               <hr
                 style={{
@@ -138,19 +137,19 @@ export function MyTimeLine({ handleChange }) {
           </Tooltip>
         </Grid>
         <Grid
+          alignItems='end;'
           container
           spacing={3}
           onClick={(e) => {
             handleChange(e, 2);
           }}
+          href='#about'
         >
           <Tooltip
             style={{ cursor: 'pointer' }}
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {BsEdu.title}
-                </h6>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{BsEdu.title}</h6>
                 <span>{BsEdu.description}</span>
               </>
             }
@@ -175,9 +174,7 @@ export function MyTimeLine({ handleChange }) {
             style={{ cursor: 'pointer' }}
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>
-                  {BsCs.title}
-                </h6>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{BsCs.title}</h6>
                 <span>{BsCs.description}</span>
               </>
             }

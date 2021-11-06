@@ -15,7 +15,7 @@ export function TabPanel({ children, value, index, ...other }) {
         <Box
           style={{
             textAlign: 'center',
-            marginTop: '1rem',
+            marginTop: '0.5rem',
           }}
         >
           {children}

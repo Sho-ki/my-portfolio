@@ -41,7 +41,7 @@ export default function AboutMe() {
         flex={1}
         flexDirection='column'
         display='flex'
-        paddingTop=' 5em'
+        paddingTop=' 2em'
       >
         <AppBar position='static' color={'transparent'}>
           <Tabs
@@ -63,28 +63,13 @@ export default function AboutMe() {
           index={value}
           onChangeIndex={handleChangeIndex}
         >
-          <TabPanel
-            value={value}
-            index={0}
-            dir={theme.direction}
-            className={styles.tabPanels}
-          >
+          <TabPanel value={value} index={0} dir={theme.direction} className={styles.tabPanels}>
             <Introduction />
           </TabPanel>
-          <TabPanel
-            value={value}
-            index={1}
-            dir={theme.direction}
-            className={styles.tabPanels}
-          >
+          <TabPanel value={value} index={1} dir={theme.direction} className={styles.tabPanels}>
             <Experiences />
           </TabPanel>
-          <TabPanel
-            value={value}
-            index={2}
-            dir={theme.direction}
-            className={styles.tabPanels}
-          >
+          <TabPanel value={value} index={2} dir={theme.direction} className={styles.tabPanels}>
             <Academic />
           </TabPanel>
         </SwipeableViews>

@@ -9,13 +9,35 @@ import Top from '../components/Top/Top';
 import MyWork from '../components/MyWorks/MyWorks';
 import MyArticles from '../components/MyArticles/MyArticles';
 import AboutMe from '../components/AboutMe/AboutMe';
+import createBreakpoints from '@material-ui/core/styles/createBreakpoints';
 
+const breakpoints = createBreakpoints({});
 const theme = createTheme({
   typography: {
     allVariants: {
       color: '#ededed',
     },
-
+    h2: {
+      fontSize: '2.5em',
+      [breakpoints.up('sm')]: {
+        fontSize: '3em',
+      },
+    },
+    h5: {
+      fontSize: '1em',
+      margin: '0!important',
+      [breakpoints.up('sm')]: {
+        fontSize: '1.5em',
+      },
+    },
+    h6: {
+      fontSize: '1em',
+      margin: '0!important',
+      [breakpoints.up('sm')]: {
+        fontSize: '1.5em',
+        marginRight: ' 1em!important',
+      },
+    },
     fontFamily: ['Montserrat', 'sans-serif'].join(','),
   },
 

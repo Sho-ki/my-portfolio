@@ -49,7 +49,7 @@ function MyArticles({ articleSet }) {
       }}
       id='myArticles'
     >
-      <Container sx={{ py: 3 }} maxWidth='lg'>
+      <Container sx={{ paddingTop: 8 }} maxWidth='lg'>
         <Typography component='h1' variant='h2' gutterBottom textAlign='center'>
           My Articles
         </Typography>
