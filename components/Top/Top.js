@@ -37,7 +37,7 @@ function Top() {
             <LinkedInIcon sx={{ fontSize: 40 }} color='info' />
           </IconButton>
           <IconButton aria-label='github.com/Sho-ki' onClick={() => window.open('https://github.com/Sho-ki')}>
-            <GitHubIcon sx={{ fontSize: 40 }} color='tertiary' />
+            <GitHubIcon sx={{ fontSize: 40, color: '#78909c' }} />
           </IconButton>
         </div>
         <Typography variant='h5' align='center' paragraph>

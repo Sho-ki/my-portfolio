@@ -24,7 +24,7 @@ const theme = createTheme({
       },
     },
     h5: {
-      fontSize: '1em',
+      fontSize: '1.5em',
       margin: '0!important',
       [breakpoints.up('sm')]: {
         fontSize: '1.5em',
@@ -44,9 +44,9 @@ const theme = createTheme({
   palette: {
     primary: { main: blueGrey[900] },
     secondary: { main: '#149918' },
-    tertiary: { main: blueGrey[500] },
     cardColor: { main: blueGrey[800] },
     textColor: { main: '#ededed' },
+    linkText: { main: '#0bb810' },
   },
   components: {
     MuiTooltip: {

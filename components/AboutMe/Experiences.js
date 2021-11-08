@@ -18,15 +18,15 @@ export function Experiences() {
         <Typography>
           【 Code Review 】 - Reviewed each others code with other developers and did some pair programming.
           And from design to development, I practiced using github in a way that was close to the actual
-          practice with them. This is what I am currently working on:
+          practice with them. This is what I am currently working on: &emsp;
+          <Link href='https://github.com/Sho-ki/fitness-beef' color='linkText.main'>
+            Workout App(Frontend)
+          </Link>
+          &nbsp;&&nbsp;
+          <Link href='https://github.com/Sho-ki/api.fitness-chicken' color='linkText.main'>
+            Workout App(Backend)
+          </Link>
         </Typography>
-        <Link href='https://github.com/Sho-ki/fitness-beef' color='secondary'>
-          Workout App(Frontend)
-        </Link>
-        {' & '}
-        <Link href='https://github.com/Sho-ki/api.fitness-chicken' color='secondary'>
-          Workout App(Backend)
-        </Link>
       </Box>
     </>
   );

@@ -1,13 +1,4 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  Grid,
-  Typography,
-  CardContent,
-  CardMedia,
-  Link,
-} from '@mui/material';
+import { Button, Card, CardActions, Grid, Typography, CardContent, CardMedia, Link } from '@mui/material';
 
 import { SkillTag } from '../Tags/SkillTag';
 
@@ -29,9 +20,8 @@ export function RecruiteSystemApp() {
               Recruit Exam App
             </Typography>
             <Typography color='black'>
-              I expect this app being used to have candidates take a simple test
-              during the hiring process, where they can create questions, take
-              the test, and also view the results.
+              I expect this app being used to have candidates take a simple test during the hiring process,
+              where they can create questions, take the test, and also view the results.
             </Typography>
             <div
               style={{
@@ -92,19 +82,18 @@ export function RecruiteSystemApp() {
           Purpose :
         </Typography>
         <Typography>
-          To get a deeper understanding of tools such as React Hook Form, React
-          Custom Hooks, React Context, etc., I researched how to use them and
-          developed this app. I wrote this article{' '}
+          To get a deeper understanding of tools such as React Hook Form, React Custom Hooks, React Context,
+          etc., I researched how to use them and developed this app. I wrote this article{' '}
           <Link
-            color='secondary'
+            color='linkText.main'
             href='https://dev.to/shoki/using-react-context-to-prevent-prop-drilling-4acd'
             target='_blank'
             rel='noopener noreferrer'
           >
             Using React Context to Prevent Prop Drilling
           </Link>
-          . And to actually learn database normalization, I learned through
-          creating a more complex application.
+          . And to actually learn database normalization, I learned through creating a more complex
+          application.
         </Typography>
         <Typography gutterBottom variant='h5' mt={1}>
           Features :
@@ -115,9 +104,9 @@ export function RecruiteSystemApp() {
             Relational Database
           </Typography>
           <Typography>
-            Created it with a focus on database operations. For example, when
-            you create a question, you can put choices in it as much as you can.
-            Also, you can also show which questions each candidate got wrong.
+            Created it with a focus on database operations. For example, when you create a question, you can
+            put choices in it as much as you can. Also, you can also show which questions each candidate got
+            wrong.
           </Typography>
         </div>
       </Grid>

@@ -1,13 +1,4 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  Grid,
-  Typography,
-  CardContent,
-  CardMedia,
-  Link,
-} from '@mui/material';
+import { Button, Card, CardActions, Grid, Typography, CardContent, CardMedia, Link } from '@mui/material';
 
 import { SkillTag } from '../Tags/SkillTag';
 
@@ -72,10 +63,10 @@ export function TodoApp() {
           Purpose :
         </Typography>
         <Typography>
-          To satisfy my curiosity about the database operation after a drag and
-          drop, I created this todo-app. Besides, I wrote an article{' '}
+          To satisfy my curiosity about the database operation after a drag and drop, I created this todo-app.
+          Besides, I wrote an article{' '}
           <Link
-            color='secondary'
+            color='linkText.main'
             href='https://dev.to/shoki/how-to-update-the-database-after-a-drag-and-drop-operation-27dc'
             target='_blank'
             rel='noopener noreferrer'
@@ -92,17 +83,14 @@ export function TodoApp() {
             1. Drag & Drop with Database Operations
           </Typography>
           <Typography>
-            After dragging and dropping, the updated order will be automatically
-            saved in the database.
+            After dragging and dropping, the updated order will be automatically saved in the database.
           </Typography>
         </div>
         <div>
           <Typography mb='4px' mt='10px' variant='h6'>
             2. Index Number Visualize Mode
           </Typography>
-          <Typography>
-            This mode helps others understand what is going on in the database
-          </Typography>
+          <Typography>This mode helps others understand what is going on in the database</Typography>
         </div>
       </Grid>
     </>
