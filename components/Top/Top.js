@@ -9,6 +9,13 @@ import styles from '../../styles/Home.module.css';
 import { SkillTag } from '../Tags/SkillTag';
 
 function Top() {
+  const onDownload = () => {
+    const link = document.createElement('a');
+    link.download = `/resume.pdf`;
+    link.href = '/resume.pdf';
+    link.click();
+  };
+
   return (
     <Box
       sx={{
@@ -37,7 +44,11 @@ function Top() {
           Software developer with 1+ year of experience. Always have a purpose and passion
         </Typography>
         <Stack sx={{ pt: 4 }} direction='row' spacing={2} justifyContent='center'>
-          <Button variant='contained' sx={{ bgcolor: 'secondary.main', fontSize: 'smaller' }}>
+          <Button
+            variant='contained'
+            sx={{ bgcolor: 'secondary.main', fontSize: 'smaller' }}
+            onClick={onDownload}
+          >
             Download resume
           </Button>
           <Button
