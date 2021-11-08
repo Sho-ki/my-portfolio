@@ -4,13 +4,13 @@ import { Grid, Typography } from '@mui/material';
 export function Introduction() {
   return (
     <>
-      <Grid container spacing={1} alignItems='center' marginX='1em'>
+      <Grid container spacing={1} alignItems='center'>
         <Grid item xs={12} sm={4} md={4}>
           <div>
             <Image src={'/mypic.jpg'} width='300' height='200' />
           </div>
         </Grid>
-        <Grid item xs={12} sm={7} md={7} textAlign='left'>
+        <Grid item xs={12} sm={7} md={7} textAlign='left' marginX='1em'>
           <Typography lineHeight='2em'>
             I grew up in Japan and graduated from Doshisha University with a major in English Education. After
             that, I started going to University of the People with a major in CS. <br />
