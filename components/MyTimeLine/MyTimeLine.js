@@ -55,7 +55,7 @@ export function MyTimeLine({ handleChange }) {
                 <span>{SelfDev.description}</span>
               </>
             }
-            placement='right'
+            placement='left'
             style={{ cursor: 'pointer' }}
           >
             <Grid item xs={7}>
@@ -109,7 +109,7 @@ export function MyTimeLine({ handleChange }) {
               />
             </Grid>
           </Tooltip>
-          <Grid item xs={2} md={3}></Grid>
+          <Grid item xs={1} md={3}></Grid>
 
           <Tooltip
             style={{ cursor: 'pointer' }}
@@ -119,9 +119,9 @@ export function MyTimeLine({ handleChange }) {
                 <span>{SdIntern.description}</span>
               </>
             }
-            placement='right'
+            placement='left'
           >
-            <Grid item xs={5} md={3}>
+            <Grid item xs={6} md={4}>
               <Typography textAlign='left'>{SdIntern.title}</Typography>
               <hr
                 style={{
@@ -178,7 +178,7 @@ export function MyTimeLine({ handleChange }) {
                 <span>{BsCs.description}</span>
               </>
             }
-            placement='right'
+            placement='left'
           >
             <Grid item xs={4}>
               <Typography textAlign='left'>{BsCs.title}</Typography>
