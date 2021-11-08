@@ -4,7 +4,7 @@ import { Box } from '@mui/system';
 export function Academic() {
   return (
     <>
-      <Box lineHeight='2em' textAlign='left' marginLeft='3em'>
+      <Box lineHeight='2em' textAlign='left' marginX='2em'>
         <Typography>
           05/2021 ~ Current(Part time) : <br />
           B.S. Computer Science at University of the People (US) | GPA 4.0 / 4.0

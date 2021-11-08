@@ -4,7 +4,7 @@ import { Grid, Typography } from '@mui/material';
 export function Introduction() {
   return (
     <>
-      <Grid container spacing={1} alignItems='center'>
+      <Grid container spacing={1} alignItems='center' marginX='1em'>
         <Grid item xs={12} sm={4} md={4}>
           <div>
             <Image src={'/mypic.jpg'} width='300' height='200' />
