@@ -26,7 +26,7 @@ function Top() {
       id='top'
     >
       <Container maxWidth='sm'>
-        <Typography component='h1' variant='h2' align='center' gutterBottom>
+        <Typography component='h1' variant='h2' align='center' gutterBottom fontWeight='normal'>
           Shoki Ishii
         </Typography>
         <div className={styles.snsIcons}>

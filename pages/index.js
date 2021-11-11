@@ -27,18 +27,18 @@ const theme = createTheme({
       fontSize: '1.5em',
       margin: '0!important',
       [breakpoints.up('sm')]: {
-        fontSize: '1.5em',
+        fontSize: '1.8em',
       },
     },
     h6: {
       fontSize: '1em',
       margin: '0!important',
       [breakpoints.up('sm')]: {
-        fontSize: '1.5em',
+        fontSize: '1.4em',
         marginRight: ' 1em!important',
       },
     },
-    fontFamily: ['Montserrat', 'sans-serif'].join(','),
+    fontFamily: ['Karla', 'sans-serif'].join(','),
   },
 
   palette: {

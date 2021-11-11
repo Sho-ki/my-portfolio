@@ -95,7 +95,7 @@ export function RecruiteSystemApp() {
           . And to actually learn database normalization, I learned through creating a more complex
           application.
         </Typography>
-        <Typography gutterBottom variant='h5' mt={1}>
+        <Typography gutterBottom variant='h5' sx={{ paddingTop: '10px' }}>
           Features :
         </Typography>
 

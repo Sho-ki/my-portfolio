@@ -74,7 +74,7 @@ export function TodoApp() {
             How to Update the Database After a Drag-and-Drop Operation
           </Link>
         </Typography>
-        <Typography gutterBottom variant='h5' mt={1}>
+        <Typography gutterBottom variant='h5' sx={{ paddingTop: '10px' }}>
           Features :
         </Typography>
 
