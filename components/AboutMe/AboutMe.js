@@ -35,9 +35,7 @@ export default function AboutMe() {
         sx={{
           bgcolor: 'primary.main',
           width: '100%',
-          height: '50vh',
         }}
-        overflow='auto'
         flex={1}
         flexDirection='column'
         display='flex'

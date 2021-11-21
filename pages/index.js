@@ -31,7 +31,7 @@ const theme = createTheme({
       },
     },
     h6: {
-      fontSize: '1em',
+      fontSize: '1.2em',
       margin: '0!important',
       [breakpoints.up('sm')]: {
         fontSize: '1.4em',
@@ -108,7 +108,7 @@ export default function Home(props) {
 
         <MyWork />
 
-        <MyArticles articleSet={props} />
+        {props.data && <MyArticles articleSet={props.data} />}
 
         {/* Footer */}
         <Box sx={{ p: 6, bgcolor: 'primary.main' }} component='footer'>
