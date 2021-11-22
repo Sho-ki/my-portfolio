@@ -4,31 +4,15 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { MyArticle } from './MyArticle';
-import { useEffect, useState } from 'react';
 
 function MyArticles({ articleSet }) {
+  const reversedArr = [...articleSet].reverse();
   const articleDescriptionSet = [
     {
-      about: 'Summarized what readable code is and what advantages it has.',
-      background:
-        'When I was having my code reviewed, I was advised that I am not good at naming useless code and variables. So I read a book and learned how to write readable code, which is especially important in team development for readability and maintainability.',
-    },
-    {
-      about: 'Explained what REST API is and what the best practices are for designing REST API.',
-      background:
-        'I wanted to gain knowledge on what makes a good UI/UX REST API design for developers and use it in team development.',
-    },
-    {
       about:
-        'Explained what aliases are and how to set them up, along with how to use vim, and introduces some useful aliases.',
+        'Researched how to use useContext in React, wrote the code with illustrations, and explained it.',
       background:
-        'When I was looking for shortcuts to commands, I found a way to create aliases, so I summarized what I found to improve my own understanding of vim and aliases.',
-    },
-    {
-      about:
-        'Complied a list of what to put on a portfolio site with reference to various resources such as radio and articles.',
-      background:
-        'I wanted to provide useful information that summarizes various resources for developers who are in a similar position to me.',
+        'During development, I was wondering if passing the same value as props over and over again was the right way to do it. In my research, I found out that useContext can be used, so I looked up how to use it and shared it in this article.',
     },
     {
       about:
@@ -38,9 +22,31 @@ function MyArticles({ articleSet }) {
     },
     {
       about:
-        'Researched how to use useContext in React, wrote the code with illustrations, and explained it.',
+        'Complied a list of what to put on a portfolio site with reference to various resources such as radio and articles.',
       background:
-        'During development, I was wondering if passing the same value as props over and over again was the right way to do it. In my research, I found out that useContext can be used, so I looked up how to use it and shared it in this article.',
+        'I wanted to provide useful information that summarizes various resources for developers who are in a similar position to me.',
+    },
+    {
+      about:
+        'Explained what aliases are and how to set them up, along with how to use vim, and introduces some useful aliases.',
+      background:
+        'When I was looking for shortcuts to commands, I found a way to create aliases, so I summarized what I found to improve my own understanding of vim and aliases.',
+    },
+    {
+      about: 'Explained what REST API is and what the best practices are for designing REST API.',
+      background:
+        'I wanted to gain knowledge on what makes a good UI/UX REST API design for developers and use it in team development.',
+    },
+    {
+      about: 'Summarized what readable code is and what advantages it has.',
+      background:
+        'When I was having my code reviewed, I was advised that I am not good at naming useless code and variables. So I read a book and learned how to write readable code, which is especially important in team development for readability and maintainability.',
+    },
+    {
+      about:
+        'Solved the open-source-project of type-challenges myself and explained the type specification in TypeScript.',
+      background:
+        'When I was developing with typescript, I often encountered errors about the type specification. Then I was introduced to this open source, and I found mapped types, lookup types, etc. there. And for my own learning, I understood deeply and wrote an article about it.',
     },
   ];
 
@@ -97,7 +103,7 @@ function MyArticles({ articleSet }) {
         </Typography>
 
         <Slider {...settings} style={{ margin: '20px 20px 0 20px' }}>
-          {articleSet.map((article, i) => (
+          {reversedArr.map((article, i) => (
             <MyArticle
               article={article}
               key={article.id}
