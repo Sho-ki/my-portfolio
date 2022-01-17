@@ -12,11 +12,11 @@ export function Introduction() {
         </Grid>
         <Grid item xs={12} sm={7} md={7} textAlign='left' marginX='1em'>
           <Typography lineHeight='2em'>
-            I grew up in Japan and graduated from Doshisha University with a major in English Education. After
-            that, I started going to University of the People with a major in CS. <br />
-            <br />I started my career in sales, but became interested in technology and began studying
-            computer science. Combined with my communication and problem-solving skills, I believe I am an
-            excellent Web Developer.
+            Grew up in Japan and graduated from Doshisha University with a major in English Education. After that,
+            started going to University of the People with a major in CS. <br />
+            <br />
+            Started my career in sales, but became interested in technology and began studying computer science.
+            Combined with my communication and problem-solving skills, believe I am an excellent Software Developer.
           </Typography>
         </Grid>
       </Grid>

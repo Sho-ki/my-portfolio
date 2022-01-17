@@ -15,13 +15,18 @@ export function MyTimeLine({ handleChange }) {
     description: '5/2021 ~ Present, University of the People, USA (Part time student)',
   };
   const Gym = {
-    title: 'Gym Trainer & Manager',
+    title: 'Gym Founder',
     description: 'Start Up a Peronal Gym in Vietnam',
   };
 
-  const SdIntern = {
+  const VehoWorks = {
     title: 'Software Developer Intern',
     description: '7/2020 ~ 10/2021, Daise Veho Works, Vietnam',
+  };
+
+  const Teatis = {
+    title: 'Software Developer',
+    description: '12/2021 ~ Present, Teatis Inc., USA',
   };
 
   return (
@@ -29,7 +34,7 @@ export function MyTimeLine({ handleChange }) {
       sx={{
         bgcolor: 'primary.main',
         width: '100%',
-        height: '30vh',
+        height: '20vh',
         marginTop: '-100px',
         paddingTop: '60px',
       }}
@@ -38,7 +43,7 @@ export function MyTimeLine({ handleChange }) {
     >
       <Container maxWidth='lg'>
         <Grid
-          alignItems='end;'
+          alignItems='end'
           container
           spacing={3}
           onClick={(e) => {
@@ -47,7 +52,7 @@ export function MyTimeLine({ handleChange }) {
           href='#about'
           display='flex'
         >
-          <Grid item xs={5}></Grid>
+          <Grid item xs={4}></Grid>
           <Tooltip
             title={
               <>
@@ -58,7 +63,7 @@ export function MyTimeLine({ handleChange }) {
             placement='bottom'
             style={{ cursor: 'pointer' }}
           >
-            <Grid item xs={7}>
+            <Grid item xs={8}>
               {' '}
               <Typography textAlign='left'>{SelfDev.title}</Typography>
               <hr
@@ -76,7 +81,7 @@ export function MyTimeLine({ handleChange }) {
         </Grid>
 
         <Grid
-          alignItems='end;'
+          alignItems='end'
           container
           spacing={3}
           onClick={(e) => {
@@ -94,7 +99,7 @@ export function MyTimeLine({ handleChange }) {
             placement='bottom'
             href='#about'
           >
-            <Grid item xs={4} md={3}>
+            <Grid item xs={3} md={3}>
               {' '}
               <Typography textAlign='left'>{Gym.title}</Typography>
               <hr
@@ -109,20 +114,45 @@ export function MyTimeLine({ handleChange }) {
               />
             </Grid>
           </Tooltip>
-          <Grid item xs={1} md={3}></Grid>
+          <Grid item xs={2} md={2}></Grid>
 
           <Tooltip
             style={{ cursor: 'pointer' }}
             title={
               <>
-                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{SdIntern.title}</h6>
-                <span>{SdIntern.description}</span>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{VehoWorks.title}</h6>
+                <span>{VehoWorks.description}</span>
               </>
             }
             placement='bottom'
           >
-            <Grid item xs={6} md={4}>
-              <Typography textAlign='left'>{SdIntern.title}</Typography>
+            <Grid item xs={4} md={4}>
+              <Typography textAlign='left'>{VehoWorks.title}</Typography>
+              <hr
+                style={{
+                  color: 'red',
+                  backgroundColor: 'orange',
+                  height: 4,
+                  width: '100%',
+                  marginLeft: 'inherit',
+                  borderRadius: '10px',
+                }}
+              />
+            </Grid>
+          </Tooltip>
+
+          <Tooltip
+            style={{ cursor: 'pointer' }}
+            title={
+              <>
+                <h6 style={{ color: '#0288d1', fontWeight: 'bold' }}>{Teatis.title}</h6>
+                <span>{Teatis.description}</span>
+              </>
+            }
+            placement='bottom'
+          >
+            <Grid item xs={3} md={3}>
+              <Typography textAlign='left'>{Teatis.title}</Typography>
               <hr
                 style={{
                   color: 'red',
@@ -136,8 +166,9 @@ export function MyTimeLine({ handleChange }) {
             </Grid>
           </Tooltip>
         </Grid>
+
         <Grid
-          alignItems='end;'
+          alignItems='end'
           container
           spacing={3}
           onClick={(e) => {
@@ -155,7 +186,7 @@ export function MyTimeLine({ handleChange }) {
             }
             placement='bottom'
           >
-            <Grid item xs={8}>
+            <Grid item xs={7} md={7}>
               <Typography textAlign='left'>{BsEdu.title}</Typography>
               <hr
                 style={{
@@ -180,7 +211,7 @@ export function MyTimeLine({ handleChange }) {
             }
             placement='bottom'
           >
-            <Grid item xs={4}>
+            <Grid item xs={5} md={5}>
               <Typography textAlign='left'>{BsCs.title}</Typography>
               <hr
                 style={{
@@ -210,13 +241,16 @@ export function MyTimeLine({ handleChange }) {
               }}
             />{' '}
             <Grid item xs={3}>
-              <Typography textAlign='left'>2018</Typography>
+              <Typography textAlign='left'>2019</Typography>
             </Grid>
-            <Grid item xs={5}>
+            <Grid item xs={3}>
               <Typography textAlign='left'>2020</Typography>
             </Grid>
             <Grid item xs={3}>
               <Typography textAlign='left'>2021</Typography>
+            </Grid>
+            <Grid item xs={2}>
+              <Typography textAlign='left'>2022</Typography>
             </Grid>
           </Grid>
         </Grid>

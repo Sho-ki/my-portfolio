@@ -22,7 +22,7 @@ export function MyArticle({ article, num, articleDescription }) {
           <CardContent sx={{ flexGrow: 1 }}>
             <div
               style={{
-                justifyContent: 'end',
+                justifyContent: 'flex-end',
                 display: 'flex',
               }}
             >
@@ -34,10 +34,7 @@ export function MyArticle({ article, num, articleDescription }) {
             </Typography>
 
             {articleDescription && (
-              <ArticleDescription
-                about={articleDescription.about}
-                background={articleDescription.background}
-              />
+              <ArticleDescription about={articleDescription.about} background={articleDescription.background} />
             )}
           </CardContent>
         </Link>
