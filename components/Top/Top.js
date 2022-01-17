@@ -11,8 +11,8 @@ import { SkillTag } from '../Tags/SkillTag';
 function Top() {
   const onDownload = () => {
     const link = document.createElement('a');
-    link.download = `/dummyResume.pdf`;
-    link.href = `/dummyResume.pdf`;
+    link.download = `/MyResume.pdf`;
+    link.href = `/MyResume.pdf`;
     link.click();
   };
 
