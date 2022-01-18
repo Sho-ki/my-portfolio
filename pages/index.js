@@ -85,7 +85,7 @@ export default function Home(props) {
       <Head>
         <title>My Portfolio</title>
         <meta name='description' content='I am Shoki Ishii' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='/favicon_io/favicon.ico' />
         <link
           rel='stylesheet'
           href='https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'
